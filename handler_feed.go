@@ -8,8 +8,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/Faizan-KS/rss_aggregator/internal/config"
-	"github.com/Faizan-KS/rss_aggregator/internal/database"
+	"github.com/Faizan-KS/gator-rss/internal/config"
+	"github.com/Faizan-KS/gator-rss/internal/database"
 )
 
 // *******PLEASE PRACTICE THESE BELOW FUNCTION AGAIN***********
@@ -47,7 +47,7 @@ func scrapeFeeds(ctx context.Context, s *state) error {
 		if err != nil {
 			return err
 		}
-		fmt.Printf("\nFetching from %s\n",feed.Url)
+		fmt.Printf("\nFetching from %s\n", feed.Url)
 
 		for i := 0; i < len(rss.Channel.Item) && i < 3; i++ {
 			item := rss.Channel.Item[i]

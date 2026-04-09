@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/Faizan-KS/rss_aggregator/internal/config"
-	"github.com/Faizan-KS/rss_aggregator/internal/database"
+	"github.com/Faizan-KS/gator-rss/internal/config"
+	"github.com/Faizan-KS/gator-rss/internal/database"
 	_ "github.com/lib/pq"
 )
 

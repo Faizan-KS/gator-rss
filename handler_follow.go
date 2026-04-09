@@ -4,19 +4,19 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Faizan-KS/rss_aggregator/internal/database"
+	"github.com/Faizan-KS/gator-rss/internal/database"
 )
 
-func handlerDeleteFeedByURL(s *state, cmd command, user database.User)error{
-	if len(cmd.Args)!=1{
+func handlerDeleteFeedByURL(s *state, cmd command, user database.User) error {
+	if len(cmd.Args) != 1 {
 		return fmt.Errorf("usage: %s <url>", cmd.Name)
 	}
-	x:=database.DeleteFeedByURLParams{
+	x := database.DeleteFeedByURLParams{
 		UserID: user.ID,
-		Url: cmd.Args[0],
+		Url:    cmd.Args[0],
 	}
-	err:= s.db.DeleteFeedByURL(context.Background(),x)
-	if err!=nil{
+	err := s.db.DeleteFeedByURL(context.Background(), x)
+	if err != nil {
 		return err
 	}
 	fmt.Println("unfollowed the feed")
