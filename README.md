@@ -1,4 +1,4 @@
-This is an RSS Aggre**gator** made in Go with PostgreSQL as database for storing the rss feeds
+This is an CLI based RSS Aggre**gator** made in Go with PostgreSQL as database for storing the rss feeds
 
 Disclaaimer: Please do not ddos the rss feeds please be respectful
 
