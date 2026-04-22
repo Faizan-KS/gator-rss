@@ -1,20 +1,20 @@
 This is an CLI based RSS Aggre**gator** made in Go with PostgreSQL as database for storing the rss feeds
 
-Disclaaimer: Please do not ddos the rss feeds please be respectful
+Disclaimer: Please do not dos the rss feeds you follow & please be considerate
 
 Prerequisites
 1. To run the cli users need to have Go 1.24+ and PostgreSQL installed
 2. Make a .gatorconfig.json file with {"db_url":"postgres://postgres:enter_your_local_postgres_password@localhost:5432/gator?sslmode=disable","current_user_name":""}
 3. Install the cli using go install .
 
-Usage
+Usage:
 Assuming you have performed the pre-requisites
 1. Open a terminal and use the "gator-rss" command
 2. See the usage as the command exits
 3. There are several commands but the initial command to use is register
 4. Register the name for the rssfeed you want to follow
 
-These are the following commands the user can interact with
+Commands:
 1. register - register the users
 2. login - login to the user
 3. users - list all the users and see who the current user is
